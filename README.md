@@ -1,33 +1,32 @@
-# empty-project
+# Webpack Frontend Starterkit
 
-Empty project.
+[![Dependabot badge](https://flat.badgen.net/dependabot/wbkd/webpack-starter?icon=dependabot)](https://dependabot.com/)
 
-## Building and running on localhost
+A lightweight foundation for your next webpack based frontend project.
 
-First install dependencies:
 
-```sh
+### Installation
+
+```
 npm install
 ```
 
-To create a production build:
+### Start Dev Server
 
-```sh
-npm run build-prod
+```
+npm start
 ```
 
-To create a development build:
+### Build Prod Version
 
-```sh
-npm run build-dev
+```
+npm run build
 ```
 
-## Running
+### Features:
 
-```sh
-node dist/bundle.js
-```
+* ES6 Support via [babel](https://babeljs.io/) (v7)
+* SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
+* Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
 
-## Credits
-
-Made with [createapp.dev](https://createapp.dev/)
+When you run `npm run build` we use the [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) to move the css to a separate file. The css file gets included in the head of the `index.html`.
